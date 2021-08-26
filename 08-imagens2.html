@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        Regras iniciasdas com # aplicam-se apenas aos elementos HTML com o id correspondente  
+    -->
+
+    <style>
+        /* alterar a largura da imagem */
+        #logo { width: 300px; }
+
+        /* Alinha o texto e a Imagem ao centro */
+        #publi {text-align: center;}
+
+        /* Regra que só sera aplicada na FIGICAPTION que estra dentro da figure cujo o ID é PUBLI */
+        #publi figcaption {font-family: calibr;font-style: italic;}
+
+        /* Regra que so vai afetar a imagem que esta dentro doi figure cujo o id e PUBLI */
+        #publi img {border-radius: 16px;} /* arredonda a borda da img*/
+        
+        /* Colocar uma imagem de fundo na página. se a imagem for menor que a página ela sera repetida na Horizonal e na vertical (ladrilhamento) */
+        body{background-image: url(img/metal.jpg);}
+
+
+        
+    
+    
+    
+    </style>
+
+</head>
+
+
+<body>
+
+    <!--
+        <img>: usada para exibir imagens na página
+        atributos:
+        - src: indica a fonte da imagem, ou em outras palavras onde esta o arquivo da imgaem que deve ser exibida
+        - alt: especifica um texto altenrativo que sera exibido no lugar da imagem caso esta nao possa ser carregada
+    -->
+
+    <!--
+        O atributo ID identifica unicamente um elemento dentro de uma pagina HTML. Pode ser adicionado a qualquer elemento
+
+    -->
+    
+    <img id = "logo" src="img/apptiva-logo.png" alt="Logotipo da empresa Apptiva">
+
+    <img id="icone" src="img/apptiva-icon.png" alt="Icone da empresa Apptiva">
+    <!--
+        <figure>: Representa uma figura, formada por uma imagem (<img>) e uma legenda (<figcaption>)
+    -->
+    <figure id="publi" >
+
+        <!--
+            O atributo aria-label (pode ser adicionado em qualquer elemento) descreve o conteudo pra uso de leitores de tela por deficiêntes visuais
+        -->
+
+        <!--
+            O atributo tittle (também pode ser adicionado a qualquer elemento) exibe uma etiqueta flutuante com o texto fornecido quando o elemento é sobrevoado pelo mouse
+        -->
+
+        <img src="img/distance-education-1000px.jpg" alt="Educação a distancia" aria-label="Menina de cabelos longos escrevendo com lapis em um caderno, tendo a sua frente um tablet e um notebook" title="Imagem meramente ilustrativa" >
+       
+        <figcaption>Estudando com a Apptiva, seu sucesso é garantido</figcaption>
+
+    </figure>
+    
+    <!--
+        regras CSS tambem podem ser aplicadas a um elemento HTML usando atributos style
+    -->
+
+    <img style="width: 50px;" src="img/svg-logo.svg" alt="Logotipo do formato">
+</body>
+</html>
