@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <!-- Link para o arquivo CSS externo 09.css -->
+    <link rel="stylesheet" href="09.css">    
 </head>
+
 <body>
     <!-- Estrutura de um LINK: https://site.fatecfranca.edu.br/files/dsm-projeto-pedagogico.pdf 
         
@@ -32,5 +35,86 @@
     
     -->
     
+    <!--
+        
+        <a> representa uma ligação (link) para outro conteudo no mesmo site ou
+            em outro site. <a> vem de ingles "anchor" (ancora). atributos:
+             - href: especifica a url de destino do link (hipereferencia)
+             - target: quando seu valor é = "_blank" seu conteudo sera carregado em uma outra  barra do naegador
+             - rel (ATRIBUTO SEMANTICO): especifica o RELacionamento entre a pagina atual       pagina/conteudo linkada.
+               * external: identifica um link externo
+               * dofollow: quando o link aponte um sute de alta reputação ou autor recomenda  (endossa)  
+               * nofollow: quando um link aponta para um conteudo de baixa reputação ou patrocinado, ou que o autor nao recomenda   
+               * prev: link para a pagina anterior do mesmo site 
+               * next: link para a pagina seguinte do mesmo site 
+               * author: identifica o link para o site pessoal ou o e-mail do autor da  página      
+    -->
+
+    <!--
+        Link externo: link pra outro site. o href precisa ser a URL completa, começando por Https://
+    -->
+    <p>
+    <a href="https://fatecfranca.edu.br" rel="external dofollow">Site da Fatec Franca</a>
+    </p>
+    <!--
+        Link interno: link para outra pagina no mesmo sita. Pode conter apenas a parte da rota ou caminho da URL, sem o dominio e sem o protocolo
+    -->
+    <p>
+    <a href="07-imagens.html">Formatos de Imagens</a>
+    </p>
+
+    <!--
+        Link de imagem: o texto que fica entre os tags de abertura e fechamento e substituifo por um elemento de <img>
+    -->
+
+    <div>
+        <a href="08-imagens2.html"><img src="img/apptiva-icon.png" alt="Site da Aptiva"></a>
+    </div>
+
+    
+    
+    <div>
+        <!--  Link sera aberto em outra aba do navegador. Geralmente target-"_blank" é usado para links externos, para evitar que o usuario esqueça de voltar para o site original  -->
+        <ul>
+            <li>
+                <a href="http://github.com" rel="external dofollow" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="http://pudim.com.br" rel="nofollow" target="_blank">Pudim</a>
+            </li>
+        </ul>
+    </div>
+
+    <p>
+        <a href="08-imagens2.html" rel="prev" > pagina anterior </a>
+        <a href="10-imagens-dinamicas.html" rel="next" >Pagina seguinte</a>
+    </p>
+
+    <p>
+        <!-- 
+            Para forçar um conteudo a ser baixado (Download) em vez de ser aberto no navegador temos que usar o atributo download 
+        -->
+        <a href="img/metal.jpg" download >Faça Download da imagem</a>
+    </p>
+
+    <p>
+        <!--
+             O atributo download pode receber um valor que será o nome do arquivo baixado
+        -->
+        Aprenda mais sobre <em>Links</em> como a <a href="Arquivos/10-apostila-links.pdf" download="Apostila de Links do Professor Guanabara.pdf" >apostila do prof. Gustavo Guanabara</a>
+    </p>
+
+    <p>
+        <!-- O atributo download nao funciona a conteudos de links externos (hotlink)-->
+        Confira o <a href="https://site.fatecfranca.edu.br/files/horario-aulas-dsm-not-2021-2.pdf" download >Horario de aulas do curso de DSM</a>
+    </p>
+
+    <p>
+        <!-- links para e-mails tem o href iniciado por mailto: -->
+        &copy; 2021 <a href="https://faustocintra.com.br" target="_blank" rel="external dofollow author">Prof Fausto Cintra</a>. Contato: <a href="mailto:professor@faustosilva.com.br" rel="author">professor@faustocintra.com.br</a>
+    </p>
+
+    
+
 </body>
 </html>

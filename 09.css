@@ -1,0 +1,15 @@
+a {  
+    color: red;  /*altera a cor do link */ 
+    text-decoration: none; /* Retira os sublinhado dos Links */
+}
+
+/* regras para os links que ja foram visitados */
+a:visited {
+    color: royalblue;
+}
+
+/* Regra para os links quando o mouse está sobre eles*/
+a:hover {
+    color: seagreen; /* Muda a cor quando o mouse esta em cima*/
+    text-decoration: underline; /* Retorna o sublinhado quando o mouse esta em cima */
+}
