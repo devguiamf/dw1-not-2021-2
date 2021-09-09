@@ -14,6 +14,30 @@
         <li><strong>MP3</strong>. Formato de áudio mais popular na atualidade. Foi desenvolvido pelo instituto alemão Fraunhofer em 1993, como um formato de áudio de compressão com perdas. No entanto, seu uso estava sujeito a patentes até 2012, o que causou vários problemas legais. Atualmente, seu uso é livre. A sigla MP3 significa <em>MPEG Layer 3</em>, sendo que MPEG significa <em>Motion Picture Experts Group</em> (Grupo de especialistas em imagens em movimento).</li>
         <li><strong>OGG</strong>. Também conhecido como OGG Vorbis, foi desenvolvido pela função Xiph.org e lançado em 2000 como uma alternativa livre ao MP3. Apesar de ter mais qualidade técnica, nunca alcançou a popularidade do concorrente. Também é um formato de compressão com perdas.</li>
         <li><strong>WAV</strong>. Formato nativo de áudio dos sistemas operacionais da Microsoft e da IBM, lançado em 1991. Armazena o áudio sem compressão; portanto, os arquivos .wav são bem maiores que os dos outros formatos, embora a qualidade sonora também seja melhor.</li>
+
+
+     <h2>Exemplos de Audio</h2>
+            <!--
+                A tag <audio> é usado para colocar arquivos de audio em uma pagina HTML
+                Atributos: 
+                - Exibe os controlaes de midia (reproduzir/pausar, volume,etc.)
+                - autoplay: inicia a reprodução do audio assim que a pafina é carregada
+                - preload: indica o que sera carregado antecipadamente, antes que o botão de reproduzir sera acionado. Valores
+                * none: nada será pre-carregado
+                * metadada: carrega apenas as informações sobre o arquivo, como sua duração (recomendado)
+                * auto: pré-carrega todo o arquivo de mídida (padrão)
+            -->
+               <audio  controls preload="metadata" src="trilha.mp3"></audio>
+
+        <h2>Audio com multiplas fontes</h2>
+            <audio controls preload="metadata">
+                <!-- Os sources são duspostos em ordem de prioridade -->
+                <source src="trilha.mp3" type="audio/mpeg">
+                <source src="trilha.ogg" type="audio/ogg">
+                <source src="trilha.wav" type="audio/wav">
+
+            ></audio>
+    
     </ul>
 </body>
 </html>
