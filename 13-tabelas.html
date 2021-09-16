@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <link rel="stylesheet" href="13.css">
+</head>
+<body>
+   
+    <h1>Estados da região Sudeste</h1>
+    <!--
+        Tags HTML de tabela:
+        <table> define tabela
+        <tr> linha de tabela 
+        <th> célula de ilnha de cabeçalho
+        <td> célula de conteudo
+
+        Tags semanticas relacionadas a tabela:
+        <thead>: delimita a regição do cabeçalho
+        <tbody>: delimita o corpo
+        <tfoot>: delimita a região do rodapé
+    -->
+    <table>
+        <!-- Linha de cabeçalho -->
+    <thead>
+        <tr>
+            <!-- O atributo COLSPAN permite com que uma calula ocupe a largura de mais de uma celula das linhas vizinhas-->
+            <th colspan="3">DADOS GERAIS</th>
+            <th colspan="2">DADOS DEMOGRAFICOS</th>
+        </tr>
+     
+        <tr>
+            <th>Nome</th>
+            <th class="cen">Sigla</th>
+            <th>Capital</th>
+            <th>Área (km <sup>2</sup>)</th>
+            <th>População</th>
+        </tr>
+    </thead>
+        <!-- Linhas de Conteudo -->
+    <tbody>   
+        <tr>
+            <td>São Paulo</td>
+            <td class="cen">SP</td>
+            <td>São paulo</td>
+            <td class="dir">248,219,481</td>
+            <td class="dir">46.649.132</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="cen">Mg</td>
+            <td>Belo Horizonte</td>
+            <td class="dir">586.522.122</td>
+            <td class="dir">21.411.923</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="cen">RJ</td>
+            <td>Rio de Janeiro</td>
+            <td class="dir">437.50.426</td>
+            <td class="dir">17.463.349</td>
+        </tr>
+        <tr>
+            <td>Espirito Santo</td>
+            <td class="cen">ES</td>
+            <td>Vitória</td>
+            <td class="dir">460.95.583</td>
+            <td class="dir">4.108.508</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+          
+            <td colspan="3">Total</td>
+            <td class="dir">924.587,612</td>
+            <td class="dir">89.632.12</td>
+           
+        </tr>
+    </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+    <style>
+        /*
+            UNIDADES DE MEDIDA EM CSS
+            
+            1) Unidades absolutas
+                - px(pixel): corresponde a um ponto de iluminação da tela ou, quando isso não puder determinado (no Papel, por exemplo), equivale a 1/96 de uma polegada (1 polagada = 2,54cm). Seu tamanho, portanto, depende da resolução da tela
+                -pt (point): Medida usada para o tamanho de fontes Equivale a 1/72 de uma polegada
+                - cm (centímetro): para impressão
+                - mm (milímetro):para impressão
+                - in (inches, polegadas): para impressão
+
+            2) Unidades relativas
+                - %: sempre será calculado em relação ao tamanho do pai
+                - em: Usada para fontes. Significa 100% do tamanho da dont do elemento pai
+
+        */
+        #box1 {
+            background-color: whitesmoke;
+            border: 1px solid blue;
+            text-align: center;
+            width: 200px; /* Largura */
+            height: 200px; /* Altura */
+            font-size: 25pt;
+        }
+        #box2 {
+            background-color: lightgreen;
+            border: 5px dotted orange; /* dotted = pontilhado*/
+            width: 6cm;
+            height: 20mm;
+        }
+        #pai1{
+            background-color: lightgrey;
+            border: 2px dashed pink; /* Dasshed = tracejado*/
+            text-align: center;
+            width: 500px;
+            height: 300px;
+            font-size: 25px;
+        }
+        #filho1{
+            background-color: grey;
+            border: 1px solid red;
+            width: 50%; /* largura relativa a do pai*/
+            height: 70%; /* altura relativa a do pai*/
+            font-size: 0.5em; /* 50% do tamanho da font do pai*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        Texto 1
+    </div>
+    <div id="box2">
+        Este quadro impresso em papel terá 6cm de largura por 20mm (2cm) de altura
+    </div>
+    <div id="pai1">
+        Elemento pai
+        <div id="filho1">
+            Elemento Filho
+        </div>
+    </div>
+</body>
+</html>

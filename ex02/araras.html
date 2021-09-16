@@ -5,15 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Araras</title>
+    <style>
+        h1{text-align: center;}
+        p{text-align: center;}
+        h2{text-align: center;}    
+    </style>
+
 </head>
 <body>
     <h1>Imagem dinamica</h1>
     <h2>Araras: </h2>
-    <picture>
-        <source media="max-width 600px" srcset="araras-p.jpg" >
-        <source media="max-width 1030px" srcset="araras-m.jpg" >
-        <source srcset="araras-g.jpg" alt="">
-    </picture>
+    
+       <p><picture>
+            <source media="(max-width: 630px)"srcset="araras-p.jpg" type="image/jpeg">
+            <source media="(max-width: 1030px)"srcset="araras-m.jpg" type="image/jpeg">
+            <img src="araras-g.jpg" alt="Image/jpeg"> 
+        </picture></p>
+    
+    <br>
+    <p>Voltar para a Pagina <a href="index.html">Galeria de Imagem e Video</a>.</p>
     
 </body>
 </html>

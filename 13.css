@@ -1,0 +1,52 @@
+
+    /* '*' seleciona tudo */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+
+}
+table {
+    /* Retira o espaçamento entre as bordas das celulas */
+    border-collapse: collapse;
+
+    /* Centralizando horizontalmente a tabela na pagina
+        0 -> Margem superior e inferior
+        auto -> margem esquerda e direita (autocalculada
+    */
+    margin: 0 auto;
+}
+    /* Regras para celulas de cabeçalho e de conteudo*/
+td, th{
+    /* Borda */
+    border: 1px solid red;
+    /* Espaçamento interno da celula */
+    padding: 10px;
+}
+th {
+    /* Cor de fundo para as celulas de Cabeçalho*/
+    background-color: turquoise;
+}
+.dir {
+    /* Alinha o conteudo a direita*/
+    text-align: right;
+}
+.cen {
+    /* Alinha o conteudo ao centro*/
+    text-align: center;
+}
+
+/* Essa regra se aplica somente as <tr> dentro do <tfoot> */
+tfoot tr{
+    /* Coloca o texto em Negrito */
+    font-weight: bold;
+    
+    /* Coloca o texto em Italico*/
+    font-style: italic;
+    /* Cor de fundo */
+    background-color: wheat;
+
+}
