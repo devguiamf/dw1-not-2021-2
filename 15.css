@@ -1,0 +1,88 @@
+ /* CSS reset */
+ body
+ {
+     margin: 0;
+     padding: 0;
+ }
+ /********/
+ body
+ {
+     border: 2px solid blue;
+     padding: 10px;
+ }
+ h1{
+     /* Sombra de texto, os valores são iguais aos de um box-shadow*/
+     color: cornflowerblue;
+     text-shadow: 5px 5px 4px rgb(15, 61, 146);
+     
+ }
+ #box1
+ {
+     border: 2px solid rgb(32, 150, 140);
+     margin: 50px;
+     padding: 15px;
+
+     /* Sombra em um elemtno de caixa
+        Valores:
+        1°) Deslocamento Horizontal da sombra
+        2°) Deslocamento vertical da sombra
+        3°) Embassamento da sombra
+        4°) Cor da sombra
+     */
+     box-shadow: 10px 10px 10px rgb(19, 88, 82);
+ }
+ #box2
+ {
+     box-sizing: border-box; /* Inclui border e padding no tamanho do elemento*/
+     border: 20px solid rgb(118, 206, 184);
+     height: 300px;
+     width: 700px;
+     padding: 0px;
+     border-radius: 20px;/* Canto arredondado */
+ }
+ #box3
+ {
+     background-color: rgba(82, 197, 212, 0.63);
+     border-top: 2px solid green; /* topo */
+     border-right: 4px dotted black; /* direita */
+     border-bottom: 2px dashed rgb(104, 104, 64); /* embaixo */
+     border-left: 6px ridge black; /* esquerda */
+
+     /*padding-top: 20px;
+     padding-right: 12px;
+     padding-bottom: 50px;
+     padding-left: 20px;
+     padding: 80px;*/
+     padding: 20px 12px 50px 20px;
+     
+     /*margin-top: 30px;
+     margin-right: 16px;
+     margin-bottom: 10px;
+     margin-left: 25px;*/
+     margin: 30px 16px 10px 25px;
+ }
+ #box4
+ {
+     height: 150px;
+     width: 150px;
+     border: 5px solid DarkKhaki;
+     border-radius: 50%; /*Gera um círculo*/
+     text-align: center;
+     display: flex; /* Habilita o flexbox*/
+     align-items: center; /* Centralizar na vertical*/
+     justify-content: center; /* Centralizar na horizontal*/
+ }
+ #imagem1
+ {
+     border-radius: 50%;
+ }
+ #box5{
+     background-color: violet;
+     border: 5px solid yellow;
+     /* quando são dada 2 medidas, a 1° serve para TOP e BOTTOM e a 2° para LEFT e RIGHT*/
+     padding: 30px 50px;
+     margin: 40px 20px;
+
+     /* o outline  (pouco usado) é um segundo contorno do elemento, externo a borda */
+     outline: 6px solid  cornflowerblue;
+ }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemtneto de bloco e de linha</title>
+    <style>
+        .borda {
+            border: 1px solid red;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+            font-family: monospace;
+            background-color: rgb(145, 207, 172);
+    
+
+        }
+        .em-linha{
+            display: inline;
+        }
+        .em-bloco{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elementos de bloco e de linha</h1>
+    <h2>Elemento de bloco</h2>
+    <p>Sempre ocupam toda a largura disponivel do seu elemento pai.Quando colocados em sequência, ficam um em baixo do outro.</p>
+
+    <p class="borda"> p </p>
+    <div class="borda"> div </div>
+    <h1 class="borda"> h1 </h1>
+    <blockquote class="borda"> blockquote </blockquote>
+    <ol class="borda"> <li> ol </li></ol>
+    <ul class="borda"> <li> ul </li> </ul>
+
+    <h2>Elemento de linhas</h2>
+
+    <p>Ocupam apenas a largura necessária para o seu conteúdo e ficam lado a lado caso haja largura disponivel</p>
+    <a href="#" class="borda"> a </a>
+    <img class="borda" src="#" alt="img">
+    <span class="borda"> span </span>
+    <strong class="borda"> strong </strong>
+    <code class="borda"> code </code>
+    <abbr title="abbr" class="borda"> abbr</abbr>
+
+    <h2>Mudando o comportamento</h2>
+
+    <p>Um elemento de bloco pode se comporta como um elemento de linha colocando, no CSS: <code>display: inline</code>.</p>
+    <div class="borda em-linha"> div em linha </div>
+    <p class="borda em-linha"> p em linha </p>
+
+    <p>Da mesma forma, um elemento de linha pode se comportar como um elemento bloco colocando no CSS <code>displau: block</code></p>
+
+    <span class="borda em-bloco"> span em bloco</span>
+    <code class="borda em-bloco"> code em bloco</code>
+</body>
+</html>
